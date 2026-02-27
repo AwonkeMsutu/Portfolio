@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deliveries</title>
+    <link rel="stylesheet" href="deliveries.css">
+</head>
+<body>
+    <h1>Delivery Man!</h1>
+    <div id = "orders">
+      <label>
+        What Kind Of Food Do You Want
+        <select id="typeOrder">
+            <option value="Burger">Burger</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Sandwitch">Sandwitch</option>
+            <option value="Tortilla">Tortilla</option>
+        </select>
+        <br><br>
+      </label>
+      <label>
+        How Many Do You Want
+        <input type="number" id = "numDeliveries">
+      </label>
+      <br><br>
+       <label>Where do you live?
+            <select id="deliveryCity">
+                <option value="Benoni">Benoni</option>
+                <option value="Boksburg">Boksburg</option>
+                <option value="Brakpan">Brakpan</option>
+                <option value="Edenvale">Edenvale</option>
+            </select>
+        </label>
+        <br><br>
+        <button type="button" id="placeOrder">Place
+            Order</button>
+    </div>
+    <div id="displayTotal"></div>
+    
+    
+</body>
+<script src="deliveries.js"  ></script>
+</html>
