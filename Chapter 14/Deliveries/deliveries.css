@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fce4e4; /* Very light red background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+/* The main order box */
+#orders {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 8px solid #d32f2f; /* Thick red top border */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+h1 {
+    color: #d32f2f;
+}
+
+/* Styling inputs and selects */
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* The Place Order button */
+#placeOrder {
+    width: 100%;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#placeOrder:hover {
+    background-color: #b71c1c;
+}
+
+/* Where the total appears */
+#displayTotal {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #d32f2f;
+}

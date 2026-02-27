@@ -1,0 +1,101 @@
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head {
+    width: 150px;
+    height: 120px;
+    background-color: #4a90e2;
+    border: 5px solid #333;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.eye {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    position: absolute;
+}
+
+#lefteye {
+    left: 25px;
+    top: 25px;
+}
+
+#righteye {
+    right: 25px;
+    top: 25px;
+}
+
+#nose {
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 55px;
+    transform: translateX(-50%);
+}
+
+#mouth {
+    width: 60px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 85px;
+    transform: translateX(-50%);
+}
+
+#body {
+    width: 200px;
+    height: 220px;
+    background-color: #4a90e2;
+    border: 5px solid #333;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* ADD THIS LINE: It tells the arms to stay inside the body */
+    position: relative; 
+}
+
+.arm {
+    width: 30px;
+    height: 130px;
+    background-color: #7fb3d5;
+    border: 4px solid #333;
+    border-radius: 15px;
+    position: absolute;
+    /* ADJUST THIS: Start them near the top of the body */
+    top: 20px; 
+}
+
+#leftarm {
+    /* Moves the arm to the outside left of the body */
+    left: -35px; 
+}
+
+#rightarm {
+    /* Moves the arm to the outside right of the body */
+    right: -35px;
+}
+  

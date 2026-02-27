@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing_game</title>
+    <script src="guessing_game.js" ></script>
+    <link rel="stylesheet" href="guessing_game.css">
+</head>
+<body>
+    <div id ="game-wrapper">
+    <h2>MindBender Guessing Game</h2>
+    <p>Guess the secret number between 1 and 30</p>
+
+    <input type="number" id="userGuess" placeholder="??">
+
+    <button id="guessBtn" onclick="checkGuess()">GUESS</button>
+
+    <div id="feedback"></div>
+
+    <div id="attempts">Attempts: 0</div>
+
+    <button id="resetBtn" onclick="resetGame()">Restart</button>
+</div>
+
+</body>
+</html>
